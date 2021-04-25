@@ -2,7 +2,7 @@
 using namespace std;
 
 void swap(const int *p, const int *q) {
-    const int *temp = &(*p);
+    const int *temp = p;
     p = q;
     q = temp;
 }

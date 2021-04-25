@@ -1,13 +1,10 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
-bool containCapital(const string s) {
+bool containCapital(const string &s) {
     bool flag = false;
-    for (auto c: s) {
-        if (isupper(c)) {
-            flag = true;
-        }
-    }
+    for (auto &c: s) if (isupper(c)) flag = true;
     return flag;
 }
 

@@ -8,6 +8,9 @@ void print(vector<int>::iterator b, vector<int>::iterator e) {
         return;
     }
     cout << *b++ << " ";
+    #ifndef NDEBUG
+    cout << e - b << endl;
+    #endif
     print(b, e);
 }
 

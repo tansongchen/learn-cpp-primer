@@ -1,10 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int sum(initializer_list<int> intList) {
+int sum(initializer_list<int> li) {
     int sum = 0;
-    for (auto p = intList.begin(); p != intList.end(); p++) {
-        sum += *p;
+    for (const auto &i : li) {
+        sum += i;
     }
     return sum;
 }
